@@ -7,7 +7,6 @@
 
 <script setup>
 import { ref } from 'vue'
-import AnimalCard from '@/components/animalcard.vue'
 
 const animals = ref([
   { name: 'Leo', species: 'Lion', weight: 420 },
