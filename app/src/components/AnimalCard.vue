@@ -16,6 +16,7 @@
 </script>
 
 <style scoped>
+
 div {
     display: flex;
     flex-flow: column;
