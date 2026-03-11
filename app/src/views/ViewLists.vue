@@ -1,7 +1,7 @@
 <template>
     <h1> look at this list gang</h1>
     <AnimalCard v-for="animal in animals" class="container" :key="animal.name" :animal="animal">
-        
+      
     </AnimalCard>
 </template>
 
