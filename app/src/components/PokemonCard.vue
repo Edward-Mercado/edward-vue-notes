@@ -1,5 +1,5 @@
 <template>
-    <router-link to="/pkmn/{{props.index}}">
+    <router-link :to="`/pkmn/${props.index}`">
         <h2>{{ props.pokemon.name }}</h2>
         <h3> {{ props.index }}</h3>
     </router-link>
