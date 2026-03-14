@@ -1,11 +1,12 @@
 <template>
-    <PokemonCard v-for="mon, index in pokemon" 
-    :key="index" :pokemon="mon" :index="index+1">
-    </PokemonCard>
+    <div class="card-container">
+        <PokemonCard v-for="mon, index in pokemon" :key="index" :pokemon="mon" :index="index + 1">
+        </PokemonCard>
+    </div>
 </template>
 
 <script setup>
-import {ref, onMounted} from 'vue'
+import { ref, onMounted } from 'vue'
 import PokemonCard from '@/components/PokemonCard.vue'
 
 const pokemon = ref([])
@@ -26,5 +27,8 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+}
 </style>
